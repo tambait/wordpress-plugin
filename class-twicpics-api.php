@@ -152,7 +152,7 @@ class TwicPicsApi {
 		}
 
 		if ( ! $this->is_on_same_domain( $img_src ) ) {
-			return;
+			return $attributes;
 		}
 
 		/* TwicPics src*/

@@ -230,7 +230,7 @@ class TwicPicsScript {
 		}
 
 		if ( ! $this->is_on_same_domain( $img_url ) ) {
-			return;
+			return $attributes;
 		}
 
 		$attributes['data-twic-src'] = $this->_urls_manager->get_original_size_url( $img_url );
